@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeriNews - Verificador de Noticias</title>
+  <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+  <div class="verinews-popup">
+    <!-- Header with traffic light -->
+    <div class="verinews-header">
+      <div class="verinews-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+        </svg>
+        <span>VeriNews</span>
+      </div>
+      <div class="verinews-status">
+        <div class="traffic-light">
+          <div class="traffic-light-circle" id="statusCircle"></div>
+        </div>
+        <div class="status-text">
+          <div class="status-label" id="statusLabel">Verificando...</div>
+          <div class="status-confidence" id="statusConfidence"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="verinews-tabs">
+      <button class="tab-button active" data-tab="estado">Estado</button>
+      <button class="tab-button" data-tab="refuta">Refuta</button>
+      <button class="tab-button" data-tab="usuario">Usuario</button>
+      <button class="tab-button" data-tab="medios">Medios</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="verinews-content">
+      <!-- Estado Tab -->
+      <div class="tab-content active" id="tab-estado">
+        <div class="estado-layout">
+          <div class="estado-left">
+            <div class="summary-section">
+              <h3>Resumen</h3>
+              <p id="summaryText">Cargando resumen...</p>
+            </div>
+            <div class="image-section" id="imageSection">
+              <h3>Imagen destacada</h3>
+              <img id="featuredImage" src="" alt="Imagen de la noticia">
+            </div>
+          </div>
+          <div class="estado-right">
+            <h3>Fuentes que confirman</h3>
+            <div id="confirmingSources" class="sources-list">
+              <p class="loading">Buscando fuentes...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Refuta Tab -->
+      <div class="tab-content" id="tab-refuta">
+        <h3>Fuentes que refutan o contradicen</h3>
+        <div id="refutingSources" class="sources-list">
+          <p class="loading">Buscando fuentes contradictorias...</p>
+        </div>
+        <div class="fact-checkers">
+          <h4>Verificadores de hechos consultados</h4>
+          <div id="factCheckersList">
+            <p class="info">Se priorizan fuentes de fact-checking reconocidas</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Usuario Tab -->
+      <div class="tab-content" id="tab-usuario">
+        <h3>Comparación de titulares</h3>
+        <div id="headlineComparison" class="headline-comparison">
+          <p class="loading">Cargando comparación de titulares...</p>
+        </div>
+      </div>
+
+      <!-- Medios Tab -->
+      <div class="tab-content" id="tab-medios">
+        <h3>Calificación de medios</h3>
+        <p class="info">Basado en historial de verificaciones y valoraciones de usuarios</p>
+        <div id="mediaRatings" class="media-ratings">
+          <p class="loading">Calculando calificaciones...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="verinews-footer">
+      <a href="#" id="privacyLink">Política de privacidad</a>
+      <span class="version">v1.0.0</span>
+    </div>
+  </div>
+
+  <script src="js/popup.js"></script>
+</body>
+</html>

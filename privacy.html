@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeriNews - Política de Privacidad</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #667eea;
+      margin-bottom: 12px;
+      font-size: 32px;
+    }
+    
+    .last-updated {
+      color: #6c757d;
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    
+    h2 {
+      color: #495057;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      font-size: 24px;
+      border-bottom: 2px solid #e9ecef;
+      padding-bottom: 8px;
+    }
+    
+    h3 {
+      color: #6c757d;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    
+    p {
+      margin-bottom: 16px;
+      color: #495057;
+    }
+    
+    ul {
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+      color: #495057;
+    }
+    
+    .highlight {
+      background: #e7f3ff;
+      border-left: 4px solid #2196F3;
+      padding: 16px;
+      margin: 24px 0;
+      border-radius: 4px;
+    }
+    
+    .highlight strong {
+      color: #1976D2;
+    }
+    
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 2px solid #e9ecef;
+      text-align: center;
+      color: #6c757d;
+      font-size: 14px;
+    }
+    
+    a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .badge {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>VeriNews - Política de Privacidad <span class="badge">On-Device First</span></h1>
+    <p class="last-updated">Última actualización: 3 de octubre de 2025</p>
+    
+    <div class="highlight">
+      <strong>Compromiso de Privacidad:</strong> VeriNews procesa la mayoría de los datos localmente en tu dispositivo usando Chrome Built-in AI APIs. No compartimos, vendemos ni transmitimos tu información personal a terceros.
+    </div>
+    
+    <h2>1. Información que Recopilamos</h2>
+    
+    <h3>1.1 Datos de Navegación (Procesados Localmente)</h3>
+    <p>VeriNews accede temporalmente a:</p>
+    <ul>
+      <li><strong>Titulares de noticias:</strong> Extraídos de las páginas que visitas para su verificación</li>
+      <li><strong>Contenido del artículo:</strong> Primeros párrafos para análisis contextual</li>
+      <li><strong>Imágenes destacadas:</strong> URLs de imágenes asociadas a la noticia</li>
+      <li><strong>URL de la página:</strong> Para identificar la fuente original</li>
+      <li><strong>Idioma detectado:</strong> Para traducción y análisis apropiado</li>
+    </ul>
+    
+    <h3>1.2 Datos Almacenados Localmente</h3>
+    <p>En <code>chrome.storage.local</code> (en tu dispositivo):</p>
+    <ul>
+      <li><strong>Historial de verificaciones:</strong> Últimas 100 noticias verificadas (URL, titular, fecha, estado)</li>
+      <li><strong>Calificaciones de medios:</strong> Tus valoraciones (1-5 estrellas) de diferentes medios</li>
+      <li><strong>Confirmaciones personales:</strong> Tu opinión sobre la veracidad de noticias específicas</li>
+      <li><strong>Preferencias:</strong> Idioma preferido y configuraciones de la extensión</li>
+    </ul>
+    
+    <h2>2. Cómo Utilizamos la Información</h2>
+    
+    <h3>2.1 Procesamiento On-Device (Prioritario)</h3>
+    <p>VeriNews utiliza las Chrome Built-in AI APIs que procesan datos <strong>localmente en tu dispositivo</strong>:</p>
+    <ul>
+      <li><strong>Gemini Nano (Prompt API):</strong> Análisis de veracidad sin enviar datos a servidores externos</li>
+      <li><strong>Summarizer API:</strong> Generación de resúmenes localmente</li>
+      <li><strong>Translator API:</strong> Traducción on-device cuando está disponible</li>
+    </ul>
+    
+    <h3>2.2 Procesamiento de Datos</h3>
+    <p>Los datos se utilizan exclusivamente para:</p>
+    <ul>
+      <li>Verificar la veracidad de noticias en tiempo real</li>
+      <li>Generar resúmenes informativos</li>
+      <li>Comparar fuentes y detectar contradicciones</li>
+      <li>Calcular puntuaciones de credibilidad de medios</li>
+      <li>Mejorar tu experiencia personal en la extensión</li>
+    </ul>
+    
+    <h2>3. Compartición de Datos</h2>
+    
+    <div class="highlight">
+      <strong>Política de No Compartición:</strong> VeriNews NO comparte, vende, alquila ni transfiere tus datos personales a terceros. Todo el procesamiento es local o a través de las APIs oficiales de Chrome.
+    </div>
+    
+    <h3>3.1 APIs de Terceros</h3>
+    <p>VeriNews puede acceder a APIs públicas de verificación de hechos como:</p>
+    <ul>
+      <li>Snopes.com</li>
+      <li>FactCheck.org</li>
+      <li>PolitiFact</li>
+      <li>AFP Factual</li>
+    </ul>
+    <p>Estas consultas se realizan de forma anónima y no incluyen información personal identificable.</p>
+    
+    <h2>4. Almacenamiento y Seguridad</h2>
+    
+    <h3>4.1 Almacenamiento Local</h3>
+    <ul>
+      <li>Todos los datos se guardan en <code>chrome.storage.local</code></li>
+      <li>Los datos permanecen en tu dispositivo y bajo tu control</li>
+      <li>Puedes limpiar el almacenamiento en cualquier momento desde <code>chrome://extensions/</code></li>
+    </ul>
+    
+    <h3>4.2 Límites de Almacenamiento</h3>
+    <ul>
+      <li>Máximo 100 verificaciones en historial (las más antiguas se eliminan automáticamente)</li>
+      <li>Calificaciones de medios sin límite temporal</li>
+      <li>Tamaño total: ~5MB máximo</li>
+    </ul>
+    
+    <h2>5. Tus Derechos</h2>
+    
+    <p>Como usuario de VeriNews, tienes derecho a:</p>
+    <ul>
+      <li><strong>Acceso:</strong> Ver todos los datos almacenados en <code>chrome.storage.local</code></li>
+      <li><strong>Eliminación:</strong> Borrar todos los datos desinstalando la extensión o limpiando el storage</li>
+      <li><strong>Portabilidad:</strong> Exportar tus datos (función disponible en la extensión)</li>
+      <li><strong>Opt-out:</strong> Dejar de usar la extensión en cualquier momento sin consecuencias</li>
+    </ul>
+    
+    <h2>6. Cookies y Seguimiento</h2>
+    
+    <p><strong>VeriNews NO utiliza:</strong></p>
+    <ul>
+      <li>❌ Cookies de terceros</li>
+      <li>❌ Herramientas de analíticas (Google Analytics, etc.)</li>
+      <li>❌ Pixeles de seguimiento</li>
+      <li>❌ Identificadores de usuario únicos</li>
+      <li>❌ Fingerprinting del navegador</li>
+    </ul>
+    
+    <h2>7. Chrome Built-in AI APIs</h2>
+    
+    <p>VeriNews utiliza las siguientes APIs experimentales de Chrome:</p>
+    
+    <h3>7.1 Prompt API (Gemini Nano)</h3>
+    <ul>
+      <li>Procesamiento on-device cuando está disponible</li>
+      <li>Los prompts y respuestas no salen de tu dispositivo</li>
+      <li>Sujeto a la política de privacidad de Google Chrome</li>
+    </ul>
+    
+    <h3>7.2 Summarizer API</h3>
+    <ul>
+      <li>Generación local de resúmenes</li>
+      <li>Sin transmisión de contenido a servidores externos</li>
+    </ul>
+    
+    <h3>7.3 Translator API</h3>
+    <ul>
+      <li>Traducción on-device cuando el modelo está disponible</li>
+      <li>Puede requerir descarga de modelos de idioma (gestionado por Chrome)</li>
+    </ul>
+    
+    <h2>8. Menores de Edad</h2>
+    
+    <p>VeriNews no está dirigida específicamente a menores de 13 años. No recopilamos intencionalmente información personal de menores. Si eres padre/madre y crees que tu hijo/a ha proporcionado información, contáctanos para su eliminación.</p>
+    
+    <h2>9. Cambios a esta Política</h2>
+    
+    <p>Podemos actualizar esta política de privacidad ocasionalmente. Los cambios significativos se notificarán mediante:</p>
+    <ul>
+      <li>Actualización de la fecha "Última actualización"</li>
+      <li>Notificación en la extensión</li>
+      <li>Publicación en el repositorio de GitHub</li>
+    </ul>
+    
+    <h2>10. Transparencia y Código Abierto</h2>
+    
+    <p>VeriNews es un proyecto de código abierto. Puedes:</p>
+    <ul>
+      <li>Revisar todo el código fuente en <a href="https://github.com/tuusuario/verinews-extension" target="_blank">GitHub</a></li>
+      <li>Auditar cómo se procesan los datos</li>
+      <li>Verificar que no hay transmisión oculta de datos</li>
+      <li>Contribuir mejoras de privacidad</li>
+    </ul>
+    
+    <h2>11. Contacto</h2>
+    
+    <p>Para preguntas sobre esta política de privacidad:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:[email protected]">[email protected]</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/tuusuario/verinews-extension/issues" target="_blank">Abrir un Issue</a></li>
+      <li><strong>Devpost:</strong> <a href="https://devpost.com/software/verinews" target="_blank">Proyecto VeriNews</a></li>
+    </ul>
+    
+    <h2>12. Cumplimiento Legal</h2>
+    
+    <p>VeriNews cumple con:</p>
+    <ul>
+      <li><strong>GDPR</strong> (Reglamento General de Protección de Datos de la UE)</li>
+      <li><strong>CCPA</strong> (Ley de Privacidad del Consumidor de California)</li>
+      <li><strong>Chrome Web Store Policies</strong></li>
+    </ul>
+    
+    <div class="footer">
+      <p><strong>VeriNews</strong> - Verificando noticias, protegiendo tu privacidad 🛡️</p>
+      <p>Desarrollado para Chrome Built-in AI Challenge 2025</p>
+      <p style="margin-top: 12px;">
+        <a href="https://github.com/tuusuario/verinews-extension">GitHub</a> •
+        <a href="https://devpost.com/software/verinews">Devpost</a> •
+        <a href="mailto:[email protected]">Contacto</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
